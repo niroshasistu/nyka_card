@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: verdana;
+            background: #FC2779;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            colour: rgb(255, 255, 255);
+
+        }
+
+        .image {
+            width: 300px;
+            background: #020202;
+            color: #f4f4f4;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgb(184, 40, 116)
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            gap: 10px;
+            background-color: #dc8aa9;
+            padding: 10px;
+
+        }
+
+        .grid-item {
+            background-color: rgba(255, 0, 111, 0.832);
+            color: rgb(3, 3, 3);
+            padding: 20px;
+            font-size: 18px;
+            text-align: center;
+
+        }
+        /* ---------- Desktop (large screens) ---------- */
+@media (min-width: 1025px) {
+    .grid-container {
+        grid-template-columns: 300px 300px 300px;
+        justify-content: center;
+    }
+}
+
+/* ---------- Tablet (medium screens) ---------- */
+@media (max-width: 1024px) and (min-width: 601px) {
+    .grid-container {
+        grid-template-columns: 300px 300px;
+        justify-content: center;
+    }
+
+    .grid-item {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ---------- Mobile (small screens) ---------- */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .grid-item {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+        
+    </style>
+</head>
+
+<body>
+
+    <h1><i>LuxeGlow</i></h1>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div clas="products">
+                <img src="lumi.jpg" alt="nyka products" />
+            </div>
+            <div class="product info">
+                <h2><i>LuxeMinis</i></h2>
+                <p> best offers given at the end of the year</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div clas="skincare">
+                <img src="skincare.jpg" alt="nyka products" />
+            </div>
+            <div class="product info">
+                <h2><i>SkinCare</i></h2>
+                <p>“Designed to hydrate, repair, and give healthy glowing skin.”</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div clas="products">
+                <img src="hair care.jpg" alt="nyka products" />
+            </div>
+            <div class="product info">
+                <h2><i>HairCare</i></h2>
+                <p>Helps control hair fall, repair damage, and improve overall hair health.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div clas="products">
+                <img src="Makeup.jpg" alt="nyka products" />
+            </div>
+            <div class="product info">
+                <h2><i>Makeup</i></h2>
+                <p>Creates a smooth, confident look suitable for everyday and special occasions.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div clas="products">
+                <img src="baby.jpg" alt="nyka products" />
+            </div>
+            <div class="product info">
+                <h2><i>Baby Skincare</i></h2>
+                <p>Creates a smooth, confident look suitable for everyday and special occasions.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div clas="products">
+                <img src="men.jpg" alt="nyka products" />
+            </div>
+            <div class="product info">
+                <h2><i>Men's Care</i></h2>
+                <p>“Best for complete grooming with products designed for men’s skin, hair, and daily care needs.”</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div clas="products">
+                <img src="nyka tools.jpg" alt="nyka products" />
+            </div>
+            <div class="product info">
+                <h2><i>Beauty Tools</i></h2>
+                <p>Designed to improve makeup application and personal care effortlessly.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div clas="products">
+                <img src="fashion.jpg" alt="nyka products" />
+            </div>
+            <div class="product info">
+                <h2><i>Nyka fashion</i></h2>
+                <p>Best for trendy, comfortable, and stylish fashion suitable for every occasion</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div clas="products">
+                <img src="nail.jpg" alt="nyka products" />
+            </div>
+            <div class="product info">
+                <h2><i>Nails</h2>
+                <p>Enhances nail beauty with vibrant shades and professional-quality nail care</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
